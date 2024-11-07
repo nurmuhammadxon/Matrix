@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+}
+
+.wrapper {
+    max-width: 700px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding-top: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.salomlashuv {
+    font-size: 48px;
+    color: #14eeb4;
+    text-align: center;
+    animation-name: salomAnim;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    perspective: 1000px;
+}
+
+.title__about {
+    margin-top: 10px;
+    font-size: 36px;
+    color: #14c2ee;
+    text-align: center;
+}
+
+.wrap-matrix {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.matrix__link {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #14c2ee;
+    background-color: #6af0ca;
+    color: #767c7c;
+    box-sizing: border-box;
+    transition: all .3s ease;
+}
+
+.matrix__link:hover {
+    transform: translateY(-5px);
+}
+
+.matrix__link:active {
+    transform: scale(0.98);
+}
+
+@keyframes salomAnim {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    25% {
+        transform: rotateY(90deg);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    75% {
+        transform: rotateY(270deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}

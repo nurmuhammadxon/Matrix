@@ -1,0 +1,131 @@
+.matrix__box {
+    padding: 0 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.wrapper-matrix,
+.matrix__result__box {
+    width: 50%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.matrixFormBox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.matrix__title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #984e4e;
+}
+
+.matrix__box__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.matrix__table__title {
+    text-align: center;
+    color: #249b8f;
+    font-size: 32px;
+}
+
+.matrix__table {
+    width: 300px;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+.matrix__item {
+    width: 30%;
+    border: none;
+}
+
+.matrix__item input[type="text"] {
+    width: 90%;
+    font-size: 18px;
+    margin: 5px;
+    padding-left: 5px;
+    outline: none;
+    border: 2px solid #d1d9e6;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.matrix__item input[type="text"]:hover {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.btn__box {
+    display: flex;
+    gap: 20px;
+}
+
+.detirminat-box {
+    width: 23%;
+}
+
+.matrix__btn {
+    padding: 10px 25px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    transform: translateX(0%);
+}
+
+.matrix__btn:hover {
+    background-color: #45a049;
+}
+
+.matrix__btn:active {
+    transform: scale(0.98) translateX(0%);
+}
+
+.matrix__value {
+    font-size: 18px;
+    color: #45a049;
+    font-weight: bold;
+}
+
+.matrix__result {
+    font-size: 18px;
+    color: #249b8f;
+    font-weight: bold;
+}
+
+.result__table {
+    width: 300px;
+    margin: 10px auto;
+    border-collapse: collapse;
+    border-spacing: 10px;
+}
+
+.matrix__item__result {
+    width: 95px;
+    height: 22px;
+    border: 1px solid #d1d9e6;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3x3 Matritsa Determinanti Hisoblash</title>
+    <link rel="stylesheet" href="../Style/matrix.css">
+</head>
+
+<body>
+    <div class="matrix__box">
+        <div class="wrapper-matrix">
+            <h2 class="matrix__title">3x3 Matritsa Determinanti Hisoblash</h2>
+            <form class="matrixFormBox" id="matrixForm">
+                <div class="matrix__box__form">
+                    <h2 class="matrix__table__title">A[] Matritsa</h2>
+                    <table class="matrix__table">
+                        <tr class="matrix__qator">
+                            <td class="matrix__item">
+                                <input type="text" id="a11">
+                            </td>
+                            <td class="matrix__item">
+                                <input type="text" id="a12">
+                            </td>
+                            <td class="matrix__item">
+                                <input type="text" id="a13">
+                            </td>
+                        </tr>
+                        <tr class="matrix__qator">
+                            <td class="matrix__item">
+                                <input type="text" id="a21">
+                            </td>
+                            <td class="matrix__item">
+                                <input type="text" id="a22">
+                            </td>
+                            <td class="matrix__item">
+                                <input type="text" id="a23">
+                            </td>
+                        </tr>
+                        <tr class="matrix__qator">
+                            <td class="matrix__item">
+                                <input type="text" id="a31">
+                            </td>
+                            <td class="matrix__item">
+                                <input type="text" id="a32">
+                            </td>
+                            <td class="matrix__item">
+                                <input type="text" id="a33">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="matrix__box__form">
+                    <h2 class="matrix__table__title">B[] Matritsa</h2>
+                    <table class="matrix__table">
+                        <tr class="matrix__qator">
+                            <td class="matrix__item">
+                                <input type="text" id="b11">
+                            </td>
+                            <td class="matrix__item">
+                                <input type="text" id="b12">
+                            </td>
+                            <td class="matrix__item">
+                                <input type="text" id="b13">
+                            </td>
+                        </tr>
+                        <tr class="matrix__qator">
+                            <td class="matrix__item">
+                                <input type="text" id="b21">
+                            </td>
+                            <td class="matrix__item">
+                                <input type="text" id="b22">
+                            </td>
+                            <td class="matrix__item">
+                                <input type="text" id="b23">
+                            </td>
+                        </tr>
+                        <tr class="matrix__qator">
+                            <td class="matrix__item">
+                                <input type="text" id="b31">
+                            </td>
+                            <td class="matrix__item">
+                                <input type="text" id="b32">
+                            </td>
+                            <td class="matrix__item">
+                                <input type="text" id="b33">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </div>
+
+        <div class="matrix__result__box">
+
+            <div class="result__box__table">
+                <div class="detirminat__box">
+                    <table class="result__table">
+                        <tr class="matrix__qator__resutl">
+                            <td class="matrix__item__result">
+                                <span class="matrix__result" id="result__detirminatA"></span>
+                            </td>
+                            <td class="matrix__item__result">
+                                <span class="matrix__result" id="result__detirminatB"></span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="newMatrix__result">
+                    <table class="result__table">
+                        <tr class="matrix__qator__resutl">
+                            <td class="matrix__item__result">
+                                <span class="matrix__result" id="result00"></span>
+                            </td>
+                            <td class="matrix__item__result">
+                                <span class="matrix__result" id="result01"></span>
+                            </td>
+                            <td class="matrix__item__result">
+                                <span class="matrix__result" id="result02"></span>
+                            </td>
+                        </tr>
+                        <tr class="matrix__qator__resutl">
+                            <td class="matrix__item__result">
+                                <span class="matrix__result" id="result10"></span>
+                            </td>
+                            <td class="matrix__item__result">
+                                <span class="matrix__result" id="result11"></span>
+                            </td>
+                            <td class="matrix__item__result">
+                                <span class="matrix__result" id="result12"></span>
+                            </td>
+                        </tr>
+                        <tr class="matrix__qator__resutl">
+                            <td class="matrix__item__result">
+                                <span class="matrix__result" id="result20"></span>
+                            </td>
+                            <td class="matrix__item__result">
+                                <span class="matrix__result" id="result21"></span>
+                            </td>
+                            <td class="matrix__item__result">
+                                <span class="matrix__result" id="result22"></span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="btn__box">
+                <div class="detirminat-box">
+                    <button class="matrix__btn" type="button" onclick="calculateDeterminant()">Hisoblash</button>
+                    <p class="matrix__value">Determinant:</p>
+                </div>
+                <div class="detirminat-box">
+                    <button class="matrix__btn" type="button" onclick="calculateYigindi()">Hisoblash</button>
+                    <p class="matrix__value">Yigindi:</p>
+                </div>
+                <div class="detirminat-box">
+                    <button class="matrix__btn" type="button" onclick="calculateAyirma()">Hisoblash</button>
+                    <p class="matrix__value">Ayirma: <span class="matrix__result" id="result__ayirma"></span></p>
+                </div>
+                <div class="detirminat-box">
+                    <button class="matrix__btn" type="button" onclick="calculateKopaytma()">Hisoblash</button>
+                    <p class="matrix__value">Ko'paytma: <span class="matrix__result" id="result__kopaytma"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../Script/main.js"></script>
+</body>
+
+</html>
