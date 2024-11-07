@@ -151,5 +151,4 @@ function calculateKopaytma() {
     document.getElementById("result20").textContent = kopaytmaAB[2][0]
     document.getElementById("result21").textContent = kopaytmaAB[2][1]
     document.getElementById("result22").textContent = kopaytmaAB[2][2]
-
 }
