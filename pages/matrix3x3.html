@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3x3 Matritsa Determinanti Hisoblash</title>
+    <title>3x3 Matritsa Hisoblash</title>
     <link rel="stylesheet" href="../Style/matrix.css">
 </head>
 
 <body>
+    <a class="asosiySahifa" href="../index.html">Asosiy sahifa</a>
     <div class="matrix__box">
         <div class="wrapper-matrix">
-            <h2 class="matrix__title">3x3 Matritsa Determinanti Hisoblash</h2>
+            <h2 class="matrix__title">3x3 Matritsa Hisoblash</h2>
             <form class="matrixFormBox" id="matrixForm">
                 <div class="matrix__box__form">
                     <h2 class="matrix__table__title">A[] Matritsa</h2>
@@ -98,6 +99,10 @@
                 <div class="detirminat__box">
                     <table class="result__table">
                         <tr class="matrix__qator__resutl">
+                            <td class="matrix__item__text">A Matrix</td>
+                            <td class="matrix__item__text">B Matrix</td>
+                        </tr>
+                        <tr class="matrix__qator__resutl">
                             <td class="matrix__item__result">
                                 <span class="matrix__result" id="result__detirminatA"></span>
                             </td>
@@ -148,25 +153,21 @@
 
             <div class="btn__box">
                 <div class="detirminat-box">
-                    <button class="matrix__btn" type="button" onclick="calculateDeterminant()">Hisoblash</button>
-                    <p class="matrix__value">Determinant:</p>
+                    <button class="matrix__btn" type="button" onclick="calculateDeterminant()">Determinant</button>
                 </div>
                 <div class="detirminat-box">
-                    <button class="matrix__btn" type="button" onclick="calculateYigindi()">Hisoblash</button>
-                    <p class="matrix__value">Yigindi:</p>
+                    <button class="matrix__btn" type="button" onclick="calculateYigindi()">Yigindi</button>
                 </div>
                 <div class="detirminat-box">
-                    <button class="matrix__btn" type="button" onclick="calculateAyirma()">Hisoblash</button>
-                    <p class="matrix__value">Ayirma: <span class="matrix__result" id="result__ayirma"></span></p>
+                    <button class="matrix__btn" type="button" onclick="calculateAyirma()">Ayirma</button>
                 </div>
                 <div class="detirminat-box">
-                    <button class="matrix__btn" type="button" onclick="calculateKopaytma()">Hisoblash</button>
-                    <p class="matrix__value">Ko'paytma: <span class="matrix__result" id="result__kopaytma"></span></p>
+                    <button class="matrix__btn" type="button" onclick="calculateKopaytma()">Ko'paytma</button>
                 </div>
             </div>
         </div>
     </div>
-    <script src="../Script/main.js"></script>
+    <script src="../Script/matrix3x3.js"></script>
 </body>
 
 </html>
